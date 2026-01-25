@@ -1,5 +1,6 @@
 <html>
   <head>
+     
     <style>
       @import url('https://fonts.googleapis.com/css2?family=Inter:wght@700&display=swap');
       html, body {
@@ -72,14 +73,19 @@
         text-align: center;
       }
     </style>
+    
+   
+    
     <!-- Load the Google Identity Services script -->
     <script src="https://accounts.google.com/gsi/client" async defer></script>
+    <script type="module" src="https://unpkg.com/x-frame-bypass"></script>  
   </head>
   <body>
     <div class="center-content" id="mainPage">
       <div class="header">Project Ultra</div>
       <div id="gSignIn"></div>
       <div id="errorMsg" class="error" style="display:none;"></div>
+      <iframe is="x-frame-bypass" src="https://example.org/" width="800" height="600"></iframe>
     </div>
     <script>
       // --- CONFIGURATION ---
